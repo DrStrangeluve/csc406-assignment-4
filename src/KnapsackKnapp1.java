@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.LinkedList;
 import java.util.Scanner;
 
 public class KnapsackKnapp1 {
