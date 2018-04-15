@@ -40,7 +40,7 @@ public class WarshallFloydKnapp1 {
             }
             write(String.format("Weighted Matrix %d:%n", 0));
             matrixToString(WDAMatrix);
-            write(String.format("Predecessor Matrix %d:%n", 0));
+            write(String.format("%nPredecessor Matrix %d:%n", 0));
             matrixToString(predecessorMatrix);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -62,9 +62,9 @@ public class WarshallFloydKnapp1 {
                     }
                 }
             }
-            write(String.format("Weighted Matrix %d:%n", k));
+            write(String.format("%nWeighted Matrix %d:%n", k));
             matrixToString(WDAMatrix);
-            write(String.format("Predecessor Matrix %d:%n", k));
+            write(String.format("%nPredecessor Matrix %d:%n", k));
             matrixToString(predecessorMatrix);
         }
         write(String.format("%nPath from %d to %d:%n%s", 1, 4, path(1, 4)));
